@@ -5,20 +5,20 @@
 from setuptools import setup, find_packages
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='LandrayTest',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='易企签 接口演示程序',
     long_description=readme,
-    author='Kenneth Reitz and Jess',
+    author='Jess',
     author_email='2482003411@qq.com',
-    url='https://github.com/JessKXWL/samplemod',
+    url='https://github.com/JessKXWL/LandrayTest',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
