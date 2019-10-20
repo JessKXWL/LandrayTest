@@ -19,6 +19,7 @@
 
 ## run
 > 创建instance文件, 创建config.py文件, 配置相应内容
+
 > run app.py
 
 ## License
