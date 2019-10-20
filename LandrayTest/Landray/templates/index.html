@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>易企签 接口演示程序</title>
+    <script src="{{ url_for("static",filename="jquery.min.js") }}"></script>
+    <link href="{{ url_for("static",filename="bootstrap.min.css") }}" rel="stylesheet">
+</head>
+<body>
+<div class="box">
+    <button type="button" class="btn btn-primary btn-lg" onclick="showIframe('{{ action_url }}')" >iframe嵌入</button>
+    <button type="button" class="btn btn-primary btn-lg" onclick="window.open('{{ action_url }}','_blank')">新标签打开</button>
+</div>
+</body>
+<script>
+function showIframe(url) {
+    var oIframe = document.createElement('iframe');
+    oIframe.src = url;
+    oIframe.style.width = '1500px';
+    oIframe.style.height = '1000px';
+    oIframe.style.background = 'background:#2397E2filter:Chroma(Color=white)';
+    document.body.appendChild(oIframe);
+}
+</script>
+<style>
+    body{
+        {#background-image: url('https://signit.cn//www/images/banbg.png');#}
+        background-color: #fafafa;
+    }
+    .box{
+        width: 1400px;
+        {#height: 800px;#}
+        display: table-cell;
+        text-align: center;
+        position: relative;
+        top: 30px;
+        left: 50px;
+        {#vertical-align: middle;#}
+    }
+</style>
+</html>
