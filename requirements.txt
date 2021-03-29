@@ -20,7 +20,7 @@ packaging==19.2
 post==2019.4.13
 public==2019.4.13
 pycparser==2.19
-Pygments==2.4.2
+Pygments==2.7.4
 PyMySQL==0.8.1
 pyparsing==2.4.2
 pyquery==1.4.0
